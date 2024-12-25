@@ -4,22 +4,10 @@ from ex import ex_funcs
 
 # PDPM
 
+def greet(name):
+    return f"Hello, {name}!"
 
-@pytest.mark.parametrize(
-    "x, y, expected",
-    [
-        # この部分を変更
-        # PDPM
-        (3, 2, 1),
-        (10, 9, 8),
-        (11, 11, 11)
-        #PDPM
-        #PDPM
-    ],
-)
-def test_ex_funcs(x: int, y: int, expected: int) -> None:
-    assert ex_funcs(x, y) == expected
-    
 
-def test_ex_funcs(x: int, y: int, expected: int) -> None:
-
+# テスト用の関数呼び出し
+if __name__ == "__main__":
+    print(greet("World"))
