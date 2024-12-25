@@ -1,14 +1,7 @@
-def ex_funcs(x, y):
-    return x + y
+def greet(name):
+    return f"Hello, {name}!"
 
 
-def ex_funcs2(x, y):
-    return x - y
-
-
-def ex_funcs3(x, y):
-    return x * y
-
-
-def ex_funcs4(x, y):
-    return x / y
+# テスト用の関数呼び出し
+if __name__ == "__main__":
+    print(greet("World"))
